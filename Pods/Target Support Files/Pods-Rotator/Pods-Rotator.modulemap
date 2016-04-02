@@ -1,0 +1,6 @@
+framework module Pods_Rotator {
+  umbrella header "Pods-Rotator-umbrella.h"
+
+  export *
+  module * { export * }
+}
