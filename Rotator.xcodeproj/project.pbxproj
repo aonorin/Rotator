@@ -13,6 +13,23 @@
 		3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8501CB06390006FDD9A /* ContainerFactory.swift */; };
 		3721A8541CB065CF006FDD9A /* URLNavigationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8531CB065CF006FDD9A /* URLNavigationMap.swift */; };
 		3721A8561CB06646006FDD9A /* RotatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8551CB06646006FDD9A /* RotatorViewController.swift */; };
+		3721A8691CB06C7F006FDD9A /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721A85E1CB06C7F006FDD9A /* MetalView.m */; };
+		3721A86A1CB06C7F006FDD9A /* OBJModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8601CB06C7F006FDD9A /* OBJModel.mm */; };
+		3721A86B1CB06C7F006FDD9A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8621CB06C7F006FDD9A /* Renderer.m */; };
+		3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8631CB06C7F006FDD9A /* Shaders.metal */; };
+		3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8661CB06C7F006FDD9A /* Transforms.mm */; };
+		3721A86E1CB06C7F006FDD9A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8681CB06C7F006FDD9A /* ViewController.mm */; };
+		3721A87C1CB06E1D006FDD9A /* chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8711CB06E1D006FDD9A /* chair.obj */; };
+		3721A87D1CB06E1D006FDD9A /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8721CB06E1D006FDD9A /* cube.obj */; };
+		3721A87E1CB06E1D006FDD9A /* large_teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8731CB06E1D006FDD9A /* large_teapot.obj */; };
+		3721A87F1CB06E1D006FDD9A /* new_chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8741CB06E1D006FDD9A /* new_chair.obj */; };
+		3721A8801CB06E1D006FDD9A /* new_chair_90.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8751CB06E1D006FDD9A /* new_chair_90.obj */; };
+		3721A8811CB06E1D006FDD9A /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8761CB06E1D006FDD9A /* plane.obj */; };
+		3721A8821CB06E1D006FDD9A /* small_chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8771CB06E1D006FDD9A /* small_chair.obj */; };
+		3721A8831CB06E1D006FDD9A /* small_chair_close.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8781CB06E1D006FDD9A /* small_chair_close.obj */; };
+		3721A8841CB06E1D006FDD9A /* small_chair_close2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8791CB06E1D006FDD9A /* small_chair_close2.obj */; };
+		3721A8851CB06E1D006FDD9A /* smallest_chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A87A1CB06E1D006FDD9A /* smallest_chair.obj */; };
+		3721A8861CB06E1D006FDD9A /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A87B1CB06E1D006FDD9A /* teapot.obj */; };
 		37C443341CB0535B005C4105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C443331CB0535B005C4105 /* AppDelegate.swift */; };
 		37C4433B1CB0535B005C4105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C4433A1CB0535B005C4105 /* Assets.xcassets */; };
 		37C4433E1CB0535B005C4105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C4433C1CB0535B005C4105 /* LaunchScreen.storyboard */; };
@@ -44,6 +61,30 @@
 		3721A8501CB06390006FDD9A /* ContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerFactory.swift; sourceTree = "<group>"; };
 		3721A8531CB065CF006FDD9A /* URLNavigationMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLNavigationMap.swift; sourceTree = "<group>"; };
 		3721A8551CB06646006FDD9A /* RotatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatorViewController.swift; sourceTree = "<group>"; };
+		3721A8571CB06A3D006FDD9A /* Rotator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rotator-Bridging-Header.h"; sourceTree = "<group>"; };
+		3721A85D1CB06C7F006FDD9A /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
+		3721A85E1CB06C7F006FDD9A /* MetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
+		3721A85F1CB06C7F006FDD9A /* OBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModel.h; sourceTree = "<group>"; };
+		3721A8601CB06C7F006FDD9A /* OBJModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OBJModel.mm; sourceTree = "<group>"; };
+		3721A8611CB06C7F006FDD9A /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		3721A8621CB06C7F006FDD9A /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		3721A8631CB06C7F006FDD9A /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		3721A8641CB06C7F006FDD9A /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
+		3721A8651CB06C7F006FDD9A /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
+		3721A8661CB06C7F006FDD9A /* Transforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transforms.mm; sourceTree = "<group>"; };
+		3721A8671CB06C7F006FDD9A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3721A8681CB06C7F006FDD9A /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		3721A8711CB06E1D006FDD9A /* chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.obj; sourceTree = "<group>"; };
+		3721A8721CB06E1D006FDD9A /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		3721A8731CB06E1D006FDD9A /* large_teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = large_teapot.obj; sourceTree = "<group>"; };
+		3721A8741CB06E1D006FDD9A /* new_chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = new_chair.obj; sourceTree = "<group>"; };
+		3721A8751CB06E1D006FDD9A /* new_chair_90.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = new_chair_90.obj; sourceTree = "<group>"; };
+		3721A8761CB06E1D006FDD9A /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		3721A8771CB06E1D006FDD9A /* small_chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small_chair.obj; sourceTree = "<group>"; };
+		3721A8781CB06E1D006FDD9A /* small_chair_close.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small_chair_close.obj; sourceTree = "<group>"; };
+		3721A8791CB06E1D006FDD9A /* small_chair_close2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small_chair_close2.obj; sourceTree = "<group>"; };
+		3721A87A1CB06E1D006FDD9A /* smallest_chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smallest_chair.obj; sourceTree = "<group>"; };
+		3721A87B1CB06E1D006FDD9A /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 		37C443301CB0535B005C4105 /* Rotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C443331CB0535B005C4105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C4433A1CB0535B005C4105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -156,6 +197,7 @@
 		3721A84D1CB06310006FDD9A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3721A8701CB06E1D006FDD9A /* Obj */,
 				37C4433A1CB0535B005C4105 /* Assets.xcassets */,
 				37C4433C1CB0535B005C4105 /* LaunchScreen.storyboard */,
 			);
@@ -165,6 +207,7 @@
 		3721A84E1CB06310006FDD9A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3721A85C1CB06C7F006FDD9A /* Obj Loader */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -183,6 +226,43 @@
 				3721A8531CB065CF006FDD9A /* URLNavigationMap.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		3721A85C1CB06C7F006FDD9A /* Obj Loader */ = {
+			isa = PBXGroup;
+			children = (
+				3721A85D1CB06C7F006FDD9A /* MetalView.h */,
+				3721A85E1CB06C7F006FDD9A /* MetalView.m */,
+				3721A85F1CB06C7F006FDD9A /* OBJModel.h */,
+				3721A8601CB06C7F006FDD9A /* OBJModel.mm */,
+				3721A8611CB06C7F006FDD9A /* Renderer.h */,
+				3721A8621CB06C7F006FDD9A /* Renderer.m */,
+				3721A8631CB06C7F006FDD9A /* Shaders.metal */,
+				3721A8641CB06C7F006FDD9A /* Shared.h */,
+				3721A8651CB06C7F006FDD9A /* Transforms.h */,
+				3721A8661CB06C7F006FDD9A /* Transforms.mm */,
+				3721A8671CB06C7F006FDD9A /* ViewController.h */,
+				3721A8681CB06C7F006FDD9A /* ViewController.mm */,
+			);
+			path = "Obj Loader";
+			sourceTree = "<group>";
+		};
+		3721A8701CB06E1D006FDD9A /* Obj */ = {
+			isa = PBXGroup;
+			children = (
+				3721A8711CB06E1D006FDD9A /* chair.obj */,
+				3721A8721CB06E1D006FDD9A /* cube.obj */,
+				3721A8731CB06E1D006FDD9A /* large_teapot.obj */,
+				3721A8741CB06E1D006FDD9A /* new_chair.obj */,
+				3721A8751CB06E1D006FDD9A /* new_chair_90.obj */,
+				3721A8761CB06E1D006FDD9A /* plane.obj */,
+				3721A8771CB06E1D006FDD9A /* small_chair.obj */,
+				3721A8781CB06E1D006FDD9A /* small_chair_close.obj */,
+				3721A8791CB06E1D006FDD9A /* small_chair_close2.obj */,
+				3721A87A1CB06E1D006FDD9A /* smallest_chair.obj */,
+				3721A87B1CB06E1D006FDD9A /* teapot.obj */,
+			);
+			path = Obj;
 			sourceTree = "<group>";
 		};
 		37C443271CB0535B005C4105 = {
@@ -217,6 +297,7 @@
 				3721A8521CB065C0006FDD9A /* Routing */,
 				37C443331CB0535B005C4105 /* AppDelegate.swift */,
 				37C4433F1CB0535B005C4105 /* Info.plist */,
+				3721A8571CB06A3D006FDD9A /* Rotator-Bridging-Header.h */,
 			);
 			path = Rotator;
 			sourceTree = "<group>";
@@ -355,7 +436,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3721A87D1CB06E1D006FDD9A /* cube.obj in Resources */,
+				3721A8821CB06E1D006FDD9A /* small_chair.obj in Resources */,
+				3721A87C1CB06E1D006FDD9A /* chair.obj in Resources */,
+				3721A8811CB06E1D006FDD9A /* plane.obj in Resources */,
+				3721A8801CB06E1D006FDD9A /* new_chair_90.obj in Resources */,
+				3721A8841CB06E1D006FDD9A /* small_chair_close2.obj in Resources */,
+				3721A87E1CB06E1D006FDD9A /* large_teapot.obj in Resources */,
+				3721A8861CB06E1D006FDD9A /* teapot.obj in Resources */,
+				3721A8831CB06E1D006FDD9A /* small_chair_close.obj in Resources */,
 				37C4433E1CB0535B005C4105 /* LaunchScreen.storyboard in Resources */,
+				3721A87F1CB06E1D006FDD9A /* new_chair.obj in Resources */,
+				3721A8851CB06E1D006FDD9A /* smallest_chair.obj in Resources */,
 				37C4433B1CB0535B005C4105 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,10 +521,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */,
 				3721A8561CB06646006FDD9A /* RotatorViewController.swift in Sources */,
+				3721A86E1CB06C7F006FDD9A /* ViewController.mm in Sources */,
+				3721A86A1CB06C7F006FDD9A /* OBJModel.mm in Sources */,
+				3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */,
+				3721A86B1CB06C7F006FDD9A /* Renderer.m in Sources */,
 				3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */,
 				37C443341CB0535B005C4105 /* AppDelegate.swift in Sources */,
 				3721A8541CB065CF006FDD9A /* URLNavigationMap.swift in Sources */,
+				3721A8691CB06C7F006FDD9A /* MetalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,10 +666,14 @@
 			baseConfigurationReference = 297DFCE89369D999EE900284 /* Pods-Rotator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Rotator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danarielpoblete.Rotator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rotator/Rotator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -580,10 +682,13 @@
 			baseConfigurationReference = 60EF8734CAA782DCA08D0778 /* Pods-Rotator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Rotator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danarielpoblete.Rotator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rotator/Rotator-Bridging-Header.h";
 			};
 			name = Release;
 		};

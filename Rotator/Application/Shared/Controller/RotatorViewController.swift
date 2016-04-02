@@ -9,10 +9,11 @@
 import UIKit
 import URLNavigator
 
-class RotatorViewController: UIViewController, URLNavigable {
+class RotatorViewController: ViewController, URLNavigable {
 
     init(modelId: Int) {
         super.init(nibName: nil, bundle: nil)
+        
     }
     
     convenience required init?(URL: URLConvertible, values: [String : AnyObject]) {
@@ -23,6 +24,11 @@ class RotatorViewController: UIViewController, URLNavigable {
         }
         
         self.init(modelId: modelId)
+        
+    }
+    
+    override func loadView() {
+        self.view = MetalView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -32,7 +38,7 @@ class RotatorViewController: UIViewController, URLNavigable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setup()
+//        setup()
     }
     
     override func didReceiveMemoryWarning() {
