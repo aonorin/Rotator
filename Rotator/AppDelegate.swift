@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Swinject
 import URLNavigator
 
 @UIApplicationMain
