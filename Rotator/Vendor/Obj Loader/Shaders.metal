@@ -20,19 +20,19 @@ struct Light
     float3 specularColor;
 };
 
-//constant Light light = {
-//    .direction = { 0.13, 0.72, 0.68 },
-//    .ambientColor = { 0.05, 0.05, 0.05 },
-//    .diffuseColor = { 0.9, 0.9, 0.9 },
-//    .specularColor = { 1, 1, 1 }
-//};
-
 constant Light light = {
     .direction = { 0.13, 0.72, 0.68 },
     .ambientColor = { 0.05, 0.05, 0.05 },
-    .diffuseColor = { 1, 0, 0 },
+    .diffuseColor = { 0.9, 0.9, 0.9 },
     .specularColor = { 1, 1, 1 }
 };
+
+//constant Light light = {
+//    .direction = { 0.13, 0.72, 0.68 },
+//    .ambientColor = { 0.05, 0.05, 0.05 },
+//    .diffuseColor = { 1, 1, 1 },
+//    .specularColor = { 1, 1, 1 }
+//};
 
 struct Material
 {
@@ -42,19 +42,19 @@ struct Material
     float specularPower;
 };
 
-constant Material material = {
-    .ambientColor = { 0.9, 0.1, 0 },
-    .diffuseColor = { 0.9, 0.1, 0 },
-    .specularColor = { 1, 1, 1 },
-    .specularPower = 100
-};
-
 //constant Material material = {
 //    .ambientColor = { 0.9, 0.1, 0 },
-//    .diffuseColor = { 0, 1, 0 },
+//    .diffuseColor = { 0.25, 0.25, 0.25 },
 //    .specularColor = { 1, 1, 1 },
 //    .specularPower = 100
 //};
+
+constant Material material = {
+    .ambientColor = { 0.9, 0.1, 0 },
+    .diffuseColor = { 1, 0, 0 },
+    .specularColor = { 1, 1, 1 },
+    .specularPower = 100
+};
 
 struct Vertex
 {

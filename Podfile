@@ -4,7 +4,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Rotator' do
-pod 'Swinject', '~> 1.1.0'
 pod 'URLNavigator', '~> 0.5'
 end
 

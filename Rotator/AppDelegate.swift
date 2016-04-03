@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.makeKeyAndVisible()
         
+        // Theme
+        window?.tintColor = .redColor()
+        
         // Set root
         let modelName = "chair"
         if let url = NSURL(string: "rotatorapp://rotator/\(modelName)"), root = Navigator.viewControllerForURL(url) {

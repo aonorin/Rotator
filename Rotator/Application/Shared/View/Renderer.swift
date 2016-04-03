@@ -45,6 +45,16 @@ class Renderer {
     
     func stop() {
         objRenderer.stop()
+        stopDampening()
     }
     
+    func reset() {
+        objRenderer.angle = CGPointZero
+        objRenderer.angularVelocity = CGPointZero
+        objRenderer.redraw()
+    }
+    
+    func stopDampening() {
+        objRenderer.angularVelocity = CGPointZero
+    }
 }

@@ -13,11 +13,13 @@
 @interface OBJRenderer : NSObject
 
 @property (nonatomic, assign) CGPoint angularVelocity;
+@property (nonatomic, assign) CGPoint angle;
 
 - (instancetype)initWithMetalView:(MetalView *)metalView;
 
 - (void)start;
 - (void)stop;
 - (void)loadModel:(id)obj;
+- (void)redraw;
 
 @end

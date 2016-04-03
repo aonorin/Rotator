@@ -9,9 +9,13 @@
 import UIKit
 import URLNavigator
 
-class RotatorViewController: UIViewController, URLNavigable {
+class RotatorViewController: UIViewController, URLNavigable, ThreeDModelPickerControllerDelegate {
 
     static let velocityScale: Float = 0.01
+
+    enum RenderingState {
+        case Unloaded, Loading, Done
+    }
     
     lazy var metal: MetalView = {
         let metal = MetalView()
@@ -28,6 +32,7 @@ class RotatorViewController: UIViewController, URLNavigable {
         didSet {
             renderer.model = model
             loadModel(model)
+            renderer.reset()
         }
     }
     
@@ -35,7 +40,14 @@ class RotatorViewController: UIViewController, URLNavigable {
     
     
     init(model: String) {
-        self.model = Chair()
+  
+        if let model = ThreeDModelManager.sharedManager.modelForName(model) {
+            self.model = model
+        }
+        else {
+            self.model = ThreeDModelManager.sharedManager.models.first!
+        }
+        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -115,26 +127,32 @@ class RotatorViewController: UIViewController, URLNavigable {
     // MARK: Navigation
     func navigateToModelPicker() {
         
-        guard let modelPicker = Navigator.viewControllerForURL("rotatorapp://modelpicker/123") else {
+        guard let vc = Navigator.viewControllerForURL("rotatorapp://modelpicker/\(model.type)"), modelPicker = vc as? ThreeDModelPickerController else {
             print("You may have missed out on setting the route for this... set it properly at URLNavigationMap")
             return
         }
+        
+        modelPicker.delegate = self
         
         let nav = UINavigationController(rootViewController: modelPicker)
         self.presentViewController(nav, animated: true, completion: nil)
     }
     
     // MARK: Action
-    func switchToTeapot() {
-        renderer.model = Teapot()
-    }
-    
     func loadModel(model: ThreeDModel) {
         renderer.model = model
-        modelPickerButton.setTitle("\(model.description) ▾", forState: .Normal)
+        modelPickerButton.setTitle("\(model.label) ▾", forState: .Normal)
+        modelPickerButton.setNeedsDisplay()
     }
     
     func modelPickerButtonClicked(sender: AnyObject) {
         navigateToModelPicker()
+    }
+    
+    // MARK: ThreeDModelPickerControllerDelegate
+    func didPickModel(model: ThreeDModel) {
+        if self.model != model {
+            self.model = model
+        }
     }
 }

@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0C7D58707CA44F95931F7040 /* Pods_Rotator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0ECE922E4A0E0B4BD3AEA /* Pods_Rotator.framework */; };
+		370603961CB1545000AB79AB /* teddy.obj in Resources */ = {isa = PBXBuildFile; fileRef = 370603951CB1545000AB79AB /* teddy.obj */; };
+		3706039A1CB1568500AB79AB /* cow.obj in Resources */ = {isa = PBXBuildFile; fileRef = 370603991CB1568500AB79AB /* cow.obj */; };
+		3706039E1CB159E800AB79AB /* pitcher.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3706039D1CB159E800AB79AB /* pitcher.obj */; };
+		370603A41CB15BB200AB79AB /* wateringcan.obj in Resources */ = {isa = PBXBuildFile; fileRef = 370603A31CB15BB200AB79AB /* wateringcan.obj */; };
+		370603A81CB15D2B00AB79AB /* ThreeDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370603A61CB15D2B00AB79AB /* ThreeDModel.swift */; };
+		370603A91CB15D2B00AB79AB /* ThreeDModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370603A71CB15D2B00AB79AB /* ThreeDModelManager.swift */; };
 		370BF6CF1CB09B2100192C34 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6CE1CB09B2100192C34 /* Renderer.swift */; };
 		370BF6D31CB09D0200192C34 /* OBJRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D21CB09D0200192C34 /* OBJRenderer.mm */; };
 		370BF6D51CB118EF00192C34 /* Rotateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D41CB118EF00192C34 /* Rotateable.swift */; };
 		370BF6D71CB1193100192C34 /* OBJLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D61CB1193100192C34 /* OBJLoadable.swift */; };
-		370BF6DC1CB1197A00192C34 /* Chair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D91CB1197A00192C34 /* Chair.swift */; };
-		370BF6DD1CB1197A00192C34 /* Teapot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6DA1CB1197A00192C34 /* Teapot.swift */; };
-		370BF6DE1CB1197A00192C34 /* ThreeDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6DB1CB1197A00192C34 /* ThreeDModel.swift */; };
 		370BF6E01CB11A6F00192C34 /* ThreeDModelPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6DF1CB11A6F00192C34 /* ThreeDModelPickerController.swift */; };
 		3721A8421CB058D3006FDD9A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A8411CB058D3006FDD9A /* Metal.framework */; };
 		3721A8441CB058D9006FDD9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A8431CB058D9006FDD9A /* QuartzCore.framework */; };
-		3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8501CB06390006FDD9A /* ContainerFactory.swift */; };
 		3721A8541CB065CF006FDD9A /* URLNavigationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8531CB065CF006FDD9A /* URLNavigationMap.swift */; };
 		3721A8561CB06646006FDD9A /* RotatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8551CB06646006FDD9A /* RotatorViewController.swift */; };
 		3721A8691CB06C7F006FDD9A /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721A85E1CB06C7F006FDD9A /* MetalView.m */; };
@@ -27,7 +29,6 @@
 		3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8631CB06C7F006FDD9A /* Shaders.metal */; };
 		3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8661CB06C7F006FDD9A /* Transforms.mm */; };
 		3746F3F71CB121E2007DFC71 /* chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3746F3F41CB121E2007DFC71 /* chair.obj */; };
-		3746F3F81CB121E2007DFC71 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3746F3F51CB121E2007DFC71 /* plane.obj */; };
 		3746F3F91CB121E2007DFC71 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3746F3F61CB121E2007DFC71 /* teapot.obj */; };
 		37C443341CB0535B005C4105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C443331CB0535B005C4105 /* AppDelegate.swift */; };
 		37C4433B1CB0535B005C4105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C4433A1CB0535B005C4105 /* Assets.xcassets */; };
@@ -56,18 +57,20 @@
 
 /* Begin PBXFileReference section */
 		297DFCE89369D999EE900284 /* Pods-Rotator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rotator/Pods-Rotator.debug.xcconfig"; sourceTree = "<group>"; };
+		370603951CB1545000AB79AB /* teddy.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teddy.obj; sourceTree = "<group>"; };
+		370603991CB1568500AB79AB /* cow.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cow.obj; sourceTree = "<group>"; };
+		3706039D1CB159E800AB79AB /* pitcher.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pitcher.obj; sourceTree = "<group>"; };
+		370603A31CB15BB200AB79AB /* wateringcan.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wateringcan.obj; sourceTree = "<group>"; };
+		370603A61CB15D2B00AB79AB /* ThreeDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDModel.swift; sourceTree = "<group>"; };
+		370603A71CB15D2B00AB79AB /* ThreeDModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDModelManager.swift; sourceTree = "<group>"; };
 		370BF6CE1CB09B2100192C34 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		370BF6D11CB09D0200192C34 /* OBJRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJRenderer.h; sourceTree = "<group>"; };
 		370BF6D21CB09D0200192C34 /* OBJRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OBJRenderer.mm; sourceTree = "<group>"; };
 		370BF6D41CB118EF00192C34 /* Rotateable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotateable.swift; sourceTree = "<group>"; };
 		370BF6D61CB1193100192C34 /* OBJLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBJLoadable.swift; sourceTree = "<group>"; };
-		370BF6D91CB1197A00192C34 /* Chair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chair.swift; sourceTree = "<group>"; };
-		370BF6DA1CB1197A00192C34 /* Teapot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teapot.swift; sourceTree = "<group>"; };
-		370BF6DB1CB1197A00192C34 /* ThreeDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDModel.swift; sourceTree = "<group>"; };
 		370BF6DF1CB11A6F00192C34 /* ThreeDModelPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDModelPickerController.swift; sourceTree = "<group>"; };
 		3721A8411CB058D3006FDD9A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		3721A8431CB058D9006FDD9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		3721A8501CB06390006FDD9A /* ContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerFactory.swift; sourceTree = "<group>"; };
 		3721A8531CB065CF006FDD9A /* URLNavigationMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLNavigationMap.swift; sourceTree = "<group>"; };
 		3721A8551CB06646006FDD9A /* RotatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatorViewController.swift; sourceTree = "<group>"; };
 		3721A8571CB06A3D006FDD9A /* Rotator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rotator-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -82,7 +85,6 @@
 		3721A8651CB06C7F006FDD9A /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
 		3721A8661CB06C7F006FDD9A /* Transforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transforms.mm; sourceTree = "<group>"; };
 		3746F3F41CB121E2007DFC71 /* chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.obj; sourceTree = "<group>"; };
-		3746F3F51CB121E2007DFC71 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
 		3746F3F61CB121E2007DFC71 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 		37C443301CB0535B005C4105 /* Rotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C443331CB0535B005C4105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370603A51CB15D2B00AB79AB /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				370603A71CB15D2B00AB79AB /* ThreeDModelManager.swift */,
+				370603A61CB15D2B00AB79AB /* ThreeDModel.swift */,
+			);
+			path = "3D Models";
+			sourceTree = "<group>";
+		};
 		370BF6D01CB09D0200192C34 /* CPP renderer */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,16 +146,6 @@
 				370BF6D21CB09D0200192C34 /* OBJRenderer.mm */,
 			);
 			path = "CPP renderer";
-			sourceTree = "<group>";
-		};
-		370BF6D81CB1197A00192C34 /* 3D Models */ = {
-			isa = PBXGroup;
-			children = (
-				370BF6DB1CB1197A00192C34 /* ThreeDModel.swift */,
-				370BF6D91CB1197A00192C34 /* Chair.swift */,
-				370BF6DA1CB1197A00192C34 /* Teapot.swift */,
-			);
-			path = "3D Models";
 			sourceTree = "<group>";
 		};
 		3721A8451CB05CC7006FDD9A /* Frameworks */ = {
@@ -206,7 +207,7 @@
 				370BF6D41CB118EF00192C34 /* Rotateable.swift */,
 				370BF6D61CB1193100192C34 /* OBJLoadable.swift */,
 				37D5161E1CB08154005A9BC8 /* ViewSpace.swift */,
-				370BF6D81CB1197A00192C34 /* 3D Models */,
+				370603A51CB15D2B00AB79AB /* 3D Models */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,14 +239,6 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
-		3721A84F1CB06379006FDD9A /* App Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				3721A8501CB06390006FDD9A /* ContainerFactory.swift */,
-			);
-			path = "App Dependencies";
-			sourceTree = "<group>";
-		};
 		3721A8521CB065C0006FDD9A /* Routing */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,8 +268,11 @@
 			isa = PBXGroup;
 			children = (
 				3746F3F41CB121E2007DFC71 /* chair.obj */,
-				3746F3F51CB121E2007DFC71 /* plane.obj */,
 				3746F3F61CB121E2007DFC71 /* teapot.obj */,
+				370603951CB1545000AB79AB /* teddy.obj */,
+				370603991CB1568500AB79AB /* cow.obj */,
+				3706039D1CB159E800AB79AB /* pitcher.obj */,
+				370603A31CB15BB200AB79AB /* wateringcan.obj */,
 			);
 			path = OBJ;
 			sourceTree = "<group>";
@@ -309,7 +305,6 @@
 				3721A8461CB06310006FDD9A /* Application */,
 				3721A84D1CB06310006FDD9A /* Resources */,
 				3721A84E1CB06310006FDD9A /* Vendor */,
-				3721A84F1CB06379006FDD9A /* App Dependencies */,
 				3721A8521CB065C0006FDD9A /* Routing */,
 				37C443331CB0535B005C4105 /* AppDelegate.swift */,
 				37C4433F1CB0535B005C4105 /* Info.plist */,
@@ -453,8 +448,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3746F3F71CB121E2007DFC71 /* chair.obj in Resources */,
+				3706039E1CB159E800AB79AB /* pitcher.obj in Resources */,
 				37C4433E1CB0535B005C4105 /* LaunchScreen.storyboard in Resources */,
-				3746F3F81CB121E2007DFC71 /* plane.obj in Resources */,
+				370603A41CB15BB200AB79AB /* wateringcan.obj in Resources */,
+				370603961CB1545000AB79AB /* teddy.obj in Resources */,
+				3706039A1CB1568500AB79AB /* cow.obj in Resources */,
 				37C4433B1CB0535B005C4105 /* Assets.xcassets in Resources */,
 				3746F3F91CB121E2007DFC71 /* teapot.obj in Resources */,
 			);
@@ -531,18 +529,16 @@
 			files = (
 				3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */,
 				3721A8561CB06646006FDD9A /* RotatorViewController.swift in Sources */,
-				370BF6DD1CB1197A00192C34 /* Teapot.swift in Sources */,
 				370BF6CF1CB09B2100192C34 /* Renderer.swift in Sources */,
 				37D5161F1CB08154005A9BC8 /* ViewSpace.swift in Sources */,
 				370BF6D31CB09D0200192C34 /* OBJRenderer.mm in Sources */,
-				370BF6DC1CB1197A00192C34 /* Chair.swift in Sources */,
 				370BF6D51CB118EF00192C34 /* Rotateable.swift in Sources */,
 				3721A86A1CB06C7F006FDD9A /* OBJModel.mm in Sources */,
 				3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */,
+				370603A81CB15D2B00AB79AB /* ThreeDModel.swift in Sources */,
 				370BF6D71CB1193100192C34 /* OBJLoadable.swift in Sources */,
-				370BF6DE1CB1197A00192C34 /* ThreeDModel.swift in Sources */,
 				3721A86B1CB06C7F006FDD9A /* Renderer.m in Sources */,
-				3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */,
+				370603A91CB15D2B00AB79AB /* ThreeDModelManager.swift in Sources */,
 				37C443341CB0535B005C4105 /* AppDelegate.swift in Sources */,
 				3721A8541CB065CF006FDD9A /* URLNavigationMap.swift in Sources */,
 				3721A8691CB06C7F006FDD9A /* MetalView.m in Sources */,

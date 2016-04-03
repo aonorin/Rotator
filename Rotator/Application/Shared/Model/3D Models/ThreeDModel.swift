@@ -12,13 +12,16 @@ import Foundation
 
 @objc class ThreeDModel: NSObject, Rotateable, OBJLoadable {
     
-    var fileURL: NSURL
-    var viewSpace: ViewSpace
+    var fileURL: NSURL = NSURL(string: "")!
+    var viewSpace: ViewSpace = ViewSpace(cameraDistance: 0, cameraNear: 0, cameraFar: 0)
+    var label: String = ""
+    var type: String = ""
     
-    override init() {
-        self.fileURL = NSURL(string: "")!
-        self.viewSpace = ViewSpace(cameraDistance: 0, cameraNear: 0, cameraFar: 0)
+    // uses Builder pattern
+    init(build: (ThreeDModel) -> Void) {
         super.init()
+        build(self)
+        
     }
     
 }

@@ -29,7 +29,6 @@ static float DegToRad(float deg)
 
 @property (nonatomic, assign) MetalView *view;
 @property (nonatomic, assign) NSTimeInterval lastFrameTime;
-@property (nonatomic, assign) CGPoint angle;
 
 @property (nonatomic, strong) id<MTLBuffer> vertexBuffer;
 @property (nonatomic, strong) id<MTLBuffer> indexBuffer;
