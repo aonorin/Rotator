@@ -11,14 +11,16 @@ import URLNavigator
 
 class RotatorViewController: UIViewController, URLNavigable {
 
+    let velocityScale: Float = 0.01
+    
     lazy var metal: MetalView = {
         let metal = MetalView()
         self.view.addSubview(metal)
         return metal
     }()
     
-    lazy var renderer: BaseObjRenderer = {
-        let r = BaseObjRenderer(metalView: self.metal)
+    lazy var renderer: Renderer = {
+        let r = Renderer(metalView: self.metal)
         return r
     }()
     
@@ -60,10 +62,14 @@ class RotatorViewController: UIViewController, URLNavigable {
         self.edgesForExtendedLayout = .None
         self.navigationController?.view.backgroundColor = .whiteColor()
         
-        // Setup metal
-        
+        // Renderer will display the rotateable object using metal
         renderer.baseObj = ChairObj()
         
+        // Setup swipe rotating event handler
+        let gr = UIPanGestureRecognizer(target: self, action: Selector("didPanMetalView:"))
+        self.metal.addGestureRecognizer(gr)
+        
+        // Setup switcher
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Teapot time", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("switchToTeapot"))
     }
     
@@ -79,7 +85,6 @@ class RotatorViewController: UIViewController, URLNavigable {
         renderer.stop()
     }
     
-    
     // MARK: Layout
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -87,13 +92,19 @@ class RotatorViewController: UIViewController, URLNavigable {
         metal.frame = self.view.bounds
     }
     
+    // MARK: UIPanGestureRecognizer
+    func didPanMetalView(gestureRecognizer: UIPanGestureRecognizer) {
+
+        // Affects the angle of the rotateable object
+        let velocity = gestureRecognizer.velocityInView(metal)
+        renderer.angularVelocity = CGPoint(x: velocity.x * CGFloat(velocityScale), y: velocity.y * CGFloat(velocityScale))
+    }
     
     // MARK: Navigation
     func navigateToModelSelector() {
         
         
     }
-    
     
     // MARK: Action
     func switchToTeapot() {

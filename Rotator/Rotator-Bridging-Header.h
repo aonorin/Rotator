@@ -6,4 +6,4 @@
 #import <Metal/Metal.h>
 #import <QuartzCore/CAMetalLayer.h>
 
-#import "ObjViewRenderer.h"
+#import "OBJRenderer.h"

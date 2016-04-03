@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C7D58707CA44F95931F7040 /* Pods_Rotator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0ECE922E4A0E0B4BD3AEA /* Pods_Rotator.framework */; };
-		370BF6CF1CB09B2100192C34 /* BaseObjRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6CE1CB09B2100192C34 /* BaseObjRenderer.swift */; };
-		370BF6D31CB09D0200192C34 /* ObjViewRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D21CB09D0200192C34 /* ObjViewRenderer.mm */; };
+		370BF6CF1CB09B2100192C34 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6CE1CB09B2100192C34 /* Renderer.swift */; };
+		370BF6D31CB09D0200192C34 /* OBJRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D21CB09D0200192C34 /* OBJRenderer.mm */; };
 		3721A8421CB058D3006FDD9A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A8411CB058D3006FDD9A /* Metal.framework */; };
 		3721A8441CB058D9006FDD9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A8431CB058D9006FDD9A /* QuartzCore.framework */; };
 		3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8501CB06390006FDD9A /* ContainerFactory.swift */; };
@@ -62,9 +62,9 @@
 
 /* Begin PBXFileReference section */
 		297DFCE89369D999EE900284 /* Pods-Rotator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rotator/Pods-Rotator.debug.xcconfig"; sourceTree = "<group>"; };
-		370BF6CE1CB09B2100192C34 /* BaseObjRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObjRenderer.swift; sourceTree = "<group>"; };
-		370BF6D11CB09D0200192C34 /* ObjViewRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjViewRenderer.h; sourceTree = "<group>"; };
-		370BF6D21CB09D0200192C34 /* ObjViewRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjViewRenderer.mm; sourceTree = "<group>"; };
+		370BF6CE1CB09B2100192C34 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		370BF6D11CB09D0200192C34 /* OBJRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJRenderer.h; sourceTree = "<group>"; };
+		370BF6D21CB09D0200192C34 /* OBJRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OBJRenderer.mm; sourceTree = "<group>"; };
 		3721A8411CB058D3006FDD9A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		3721A8431CB058D9006FDD9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3721A8501CB06390006FDD9A /* ContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerFactory.swift; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		370BF6D01CB09D0200192C34 /* CPP renderer */ = {
 			isa = PBXGroup;
 			children = (
-				370BF6D11CB09D0200192C34 /* ObjViewRenderer.h */,
-				370BF6D21CB09D0200192C34 /* ObjViewRenderer.mm */,
+				370BF6D11CB09D0200192C34 /* OBJRenderer.h */,
+				370BF6D21CB09D0200192C34 /* OBJRenderer.mm */,
 			);
 			path = "CPP renderer";
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 		3721A84C1CB06310006FDD9A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				370BF6CE1CB09B2100192C34 /* BaseObjRenderer.swift */,
+				370BF6CE1CB09B2100192C34 /* Renderer.swift */,
 				370BF6D01CB09D0200192C34 /* CPP renderer */,
 			);
 			path = View;
@@ -558,9 +558,9 @@
 				3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */,
 				3721A8561CB06646006FDD9A /* RotatorViewController.swift in Sources */,
 				37D516211CB0835E005A9BC8 /* TeapotObj.swift in Sources */,
-				370BF6CF1CB09B2100192C34 /* BaseObjRenderer.swift in Sources */,
+				370BF6CF1CB09B2100192C34 /* Renderer.swift in Sources */,
 				37D5161F1CB08154005A9BC8 /* ViewSpace.swift in Sources */,
-				370BF6D31CB09D0200192C34 /* ObjViewRenderer.mm in Sources */,
+				370BF6D31CB09D0200192C34 /* OBJRenderer.mm in Sources */,
 				3721A86A1CB06C7F006FDD9A /* OBJModel.mm in Sources */,
 				3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */,
 				37D5162B1CB08F12005A9BC8 /* BaseObj.swift in Sources */,

@@ -6,14 +6,13 @@
 //  Copyright © 2016 DanArielPoblete. All rights reserved.
 //
 
-#import "ObjViewRenderer.h"
+#import "OBJRenderer.h"
 #import "OBJModel.h"
 #import "Shared.h"
 #import "Transforms.h"
 #import "MetalView.h"
 #import "Rotator-Swift.h"
 
-static const float kVelocityScale = 0.01;
 static const float kDamping = 0.05;
 
 static float DegToRad(float deg)
@@ -21,7 +20,7 @@ static float DegToRad(float deg)
     return deg * (M_PI / 180);
 }
 
-@interface ObjViewRenderer ()
+@interface OBJRenderer ()
 
 @property (nonatomic, strong) BaseObj *obj;
 
@@ -29,9 +28,7 @@ static float DegToRad(float deg)
 @property (nonatomic, strong) CADisplayLink *displayLink;
 
 @property (nonatomic, assign) MetalView *view;
-@property (nonatomic, strong) UIGestureRecognizer *panGestureRecognizer;
 @property (nonatomic, assign) NSTimeInterval lastFrameTime;
-@property (nonatomic, assign) CGPoint angularVelocity;
 @property (nonatomic, assign) CGPoint angle;
 
 @property (nonatomic, strong) id<MTLBuffer> vertexBuffer;
@@ -42,7 +39,7 @@ static float DegToRad(float deg)
 
 @end
 
-@implementation ObjViewRenderer
+@implementation OBJRenderer
 
 - (instancetype)initWithMetalView:(MetalView *)metalView
 {
@@ -54,20 +51,11 @@ static float DegToRad(float deg)
         self.renderer.vertexFunctionName = @"vertex_main";
         self.renderer.fragmentFunctionName = @"fragment_main";
         
-        self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
-                                                                            action:@selector(gestureRecognizerDidRecognize:)];
-        [self.view addGestureRecognizer:self.panGestureRecognizer];
-        
         self.lastFrameTime = CFAbsoluteTimeGetCurrent();
     }
     
     return self;
 }
-
-//- (void)setObj:(BaseObj *)obj
-//{
-//    [self loadModel: obj];
-//}
 
 - (void)loadModel:(id)obj {
 
@@ -105,12 +93,6 @@ static float DegToRad(float deg)
 - (void)displayLinkDidFire:(CADisplayLink *)displayLink
 {
     [self redraw];
-}
-
-- (void)gestureRecognizerDidRecognize:(UIPanGestureRecognizer *)recognizer
-{
-    CGPoint velocity = [recognizer velocityInView:self.view];
-    self.angularVelocity = CGPointMake(velocity.x * kVelocityScale, velocity.y * kVelocityScale);
 }
 
 - (void)updateMotion

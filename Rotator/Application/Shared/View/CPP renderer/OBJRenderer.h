@@ -10,7 +10,9 @@
 #import "Renderer.h"
 #import "MetalView.h"
 
-@interface ObjViewRenderer : NSObject
+@interface OBJRenderer : NSObject
+
+@property (nonatomic, assign) CGPoint angularVelocity;
 
 - (instancetype)initWithMetalView:(MetalView *)metalView;
 
