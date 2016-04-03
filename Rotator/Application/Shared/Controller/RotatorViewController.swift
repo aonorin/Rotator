@@ -9,26 +9,33 @@
 import UIKit
 import URLNavigator
 
-class RotatorViewController: ViewController, URLNavigable {
+class RotatorViewController: UIViewController, URLNavigable {
 
+    lazy var metal: MetalView = {
+        let metal = MetalView()
+        self.view.addSubview(metal)
+        return metal
+    }()
+    
+    lazy var renderer: ObjViewRenderer = {
+        let r = ObjViewRenderer(metalView: self.metal)
+        return r
+    }()
+    
+    
     init(modelId: Int) {
         super.init(nibName: nil, bundle: nil)
-        
     }
     
     convenience required init?(URL: URLConvertible, values: [String : AnyObject]) {
         
-        // Let's assume that the user id is required
+        // Load model needed
         guard let modelId = values["id"] as? Int else {
             return nil
         }
         
         self.init(modelId: modelId)
         
-    }
-    
-    override func loadView() {
-        self.view = MetalView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,7 +45,7 @@ class RotatorViewController: ViewController, URLNavigable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        setup()
+        setup()
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,12 +56,40 @@ class RotatorViewController: ViewController, URLNavigable {
     
     private func setup() {
         
-        // TODO: Move this to a theme manager
-        self.view.backgroundColor = .whiteColor()
+        // Prevent view from going underneath nav bar
+        self.edgesForExtendedLayout = .None
+        self.navigationController?.view.backgroundColor = .whiteColor()
+        
+        // Setup metal
+        
+        renderer.loadModel(ChairObj())
+//        renderer.loadModel(TeapotObj())
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        renderer.start()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+    
+        renderer.stop()
+    }
+    
+    
+    // MARK: Layout
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        metal.frame = self.view.bounds
+    }
+    
     
     // MARK: Navigation
     func navigateToModelSelector() {
+        
         
     }
 }
