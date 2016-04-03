@@ -12,7 +12,8 @@ import URLNavigator
 struct URLNavigationMap {
     
     static func initialize() {
-        Navigator.map("rotatorapp://rotator/<int:id>", RotatorViewController.self)
+        Navigator.map("rotatorapp://rotator/<model>", RotatorViewController.self)
+        Navigator.map("rotatorapp://modelpicker/<model>", ThreeDModelPickerController.self)
     }
     
 }

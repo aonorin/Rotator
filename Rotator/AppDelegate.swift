@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         // Set root
-        if let url = NSURL(string: "rotatorapp://rotator/123"), root = Navigator.viewControllerForURL(url) {
+        let modelName = "chair"
+        if let url = NSURL(string: "rotatorapp://rotator/\(modelName)"), root = Navigator.viewControllerForURL(url) {
             let nav = UINavigationController(rootViewController: root)
             window?.rootViewController = nav
         }

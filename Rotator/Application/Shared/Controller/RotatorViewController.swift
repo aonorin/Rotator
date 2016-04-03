@@ -24,19 +24,29 @@ class RotatorViewController: UIViewController, URLNavigable {
         return r
     }()
     
+    var model: ThreeDModel {
+        didSet {
+            renderer.model = model
+            loadModel(model)
+        }
+    }
     
-    init(modelId: Int) {
+    let modelPickerButton = UIButton(type: .System)
+    
+    
+    init(model: String) {
+        self.model = Chair()
         super.init(nibName: nil, bundle: nil)
     }
     
     convenience required init?(URL: URLConvertible, values: [String : AnyObject]) {
         
         // Load model needed
-        guard let modelId = values["id"] as? Int else {
+        guard let model = values["model"] as? String else {
             return nil
         }
         
-        self.init(modelId: modelId)
+        self.init(model: model)
         
     }
     
@@ -61,15 +71,17 @@ class RotatorViewController: UIViewController, URLNavigable {
         self.edgesForExtendedLayout = .None
         self.navigationController?.view.backgroundColor = .whiteColor()
         
-        // Renderer will display the rotateable object using metal
-        renderer.model = Chair()
-        
         // Setup swipe rotating event handler
         let gr = UIPanGestureRecognizer(target: self, action: Selector("didPanMetalView:"))
         self.metal.addGestureRecognizer(gr)
         
+        // Load model
+        loadModel(self.model)
+        
         // Setup switcher
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Teapot time", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("switchToTeapot"))
+        modelPickerButton.addTarget(self, action: Selector("modelPickerButtonClicked:"), forControlEvents: .TouchUpInside)
+        modelPickerButton.titleLabel?.font = .boldSystemFontOfSize(17.0)
+        self.navigationItem.titleView = modelPickerButton
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -95,18 +107,34 @@ class RotatorViewController: UIViewController, URLNavigable {
     func didPanMetalView(gestureRecognizer: UIPanGestureRecognizer) {
 
         // Affects the angle of the rotateable object
+        // Allows XYZ axis rotation
         let velocity = gestureRecognizer.velocityInView(metal)
         renderer.angularVelocity = CGPoint(x: velocity.x * CGFloat(RotatorViewController.velocityScale), y: velocity.y * CGFloat(RotatorViewController.velocityScale))
     }
     
     // MARK: Navigation
-    func navigateToModelSelector() {
+    func navigateToModelPicker() {
         
+        guard let modelPicker = Navigator.viewControllerForURL("rotatorapp://modelpicker/123") else {
+            print("You may have missed out on setting the route for this... set it properly at URLNavigationMap")
+            return
+        }
         
+        let nav = UINavigationController(rootViewController: modelPicker)
+        self.presentViewController(nav, animated: true, completion: nil)
     }
     
     // MARK: Action
     func switchToTeapot() {
         renderer.model = Teapot()
+    }
+    
+    func loadModel(model: ThreeDModel) {
+        renderer.model = model
+        modelPickerButton.setTitle("\(model.description) ▾", forState: .Normal)
+    }
+    
+    func modelPickerButtonClicked(sender: AnyObject) {
+        navigateToModelPicker()
     }
 }

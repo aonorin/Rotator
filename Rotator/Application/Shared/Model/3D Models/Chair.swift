@@ -14,7 +14,7 @@ import UIKit
     override init() {
         super.init()
         
-        if let url = NSBundle.mainBundle().URLForResource("small_chair_close2", withExtension: "obj") {
+        if let url = NSBundle.mainBundle().URLForResource("chair", withExtension: "obj") {
             self.fileURL = url
         }
         self.viewSpace = ViewSpace(cameraDistance: -100, cameraNear: 0.1, cameraFar: 200)

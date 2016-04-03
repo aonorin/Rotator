@@ -7,19 +7,43 @@
 //
 
 import UIKit
+import URLNavigator
 
-class ThreeDModelPickerController: UITableViewController {
+class ThreeDModelPickerController: UITableViewController, URLNavigable {
 
 //    let models: [ThreeDModel]
+    
+    init(model: String) {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    convenience required init?(URL: URLConvertible, values: [String : AnyObject]) {
+        
+        // Load model needed
+        guard let model = values["model"] as? String else {
+            return nil
+        }
+        
+        self.init(model: model)
+        
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        setup()
+    }
+    
+    private func setup() {
+     
+        self.title = "Select a model"
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: Selector("cancelButtonClicked:"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,14 +108,13 @@ class ThreeDModelPickerController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Action
+    func cancelButtonClicked(sender: AnyObject) {
+        navigateOut()
     }
-    */
-
+    
+    // MARK: Navigation
+    func navigateOut() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

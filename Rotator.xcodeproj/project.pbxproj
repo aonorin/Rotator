@@ -26,17 +26,9 @@
 		3721A86B1CB06C7F006FDD9A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8621CB06C7F006FDD9A /* Renderer.m */; };
 		3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8631CB06C7F006FDD9A /* Shaders.metal */; };
 		3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8661CB06C7F006FDD9A /* Transforms.mm */; };
-		3721A87C1CB06E1D006FDD9A /* chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8711CB06E1D006FDD9A /* chair.obj */; };
-		3721A87D1CB06E1D006FDD9A /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8721CB06E1D006FDD9A /* cube.obj */; };
-		3721A87E1CB06E1D006FDD9A /* large_teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8731CB06E1D006FDD9A /* large_teapot.obj */; };
-		3721A87F1CB06E1D006FDD9A /* new_chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8741CB06E1D006FDD9A /* new_chair.obj */; };
-		3721A8801CB06E1D006FDD9A /* new_chair_90.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8751CB06E1D006FDD9A /* new_chair_90.obj */; };
-		3721A8811CB06E1D006FDD9A /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8761CB06E1D006FDD9A /* plane.obj */; };
-		3721A8821CB06E1D006FDD9A /* small_chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8771CB06E1D006FDD9A /* small_chair.obj */; };
-		3721A8831CB06E1D006FDD9A /* small_chair_close.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8781CB06E1D006FDD9A /* small_chair_close.obj */; };
-		3721A8841CB06E1D006FDD9A /* small_chair_close2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8791CB06E1D006FDD9A /* small_chair_close2.obj */; };
-		3721A8851CB06E1D006FDD9A /* smallest_chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A87A1CB06E1D006FDD9A /* smallest_chair.obj */; };
-		3721A8861CB06E1D006FDD9A /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A87B1CB06E1D006FDD9A /* teapot.obj */; };
+		3746F3F71CB121E2007DFC71 /* chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3746F3F41CB121E2007DFC71 /* chair.obj */; };
+		3746F3F81CB121E2007DFC71 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3746F3F51CB121E2007DFC71 /* plane.obj */; };
+		3746F3F91CB121E2007DFC71 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3746F3F61CB121E2007DFC71 /* teapot.obj */; };
 		37C443341CB0535B005C4105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C443331CB0535B005C4105 /* AppDelegate.swift */; };
 		37C4433B1CB0535B005C4105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C4433A1CB0535B005C4105 /* Assets.xcassets */; };
 		37C4433E1CB0535B005C4105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C4433C1CB0535B005C4105 /* LaunchScreen.storyboard */; };
@@ -89,17 +81,9 @@
 		3721A8641CB06C7F006FDD9A /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		3721A8651CB06C7F006FDD9A /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
 		3721A8661CB06C7F006FDD9A /* Transforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transforms.mm; sourceTree = "<group>"; };
-		3721A8711CB06E1D006FDD9A /* chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.obj; sourceTree = "<group>"; };
-		3721A8721CB06E1D006FDD9A /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
-		3721A8731CB06E1D006FDD9A /* large_teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = large_teapot.obj; sourceTree = "<group>"; };
-		3721A8741CB06E1D006FDD9A /* new_chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = new_chair.obj; sourceTree = "<group>"; };
-		3721A8751CB06E1D006FDD9A /* new_chair_90.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = new_chair_90.obj; sourceTree = "<group>"; };
-		3721A8761CB06E1D006FDD9A /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
-		3721A8771CB06E1D006FDD9A /* small_chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small_chair.obj; sourceTree = "<group>"; };
-		3721A8781CB06E1D006FDD9A /* small_chair_close.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small_chair_close.obj; sourceTree = "<group>"; };
-		3721A8791CB06E1D006FDD9A /* small_chair_close2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small_chair_close2.obj; sourceTree = "<group>"; };
-		3721A87A1CB06E1D006FDD9A /* smallest_chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smallest_chair.obj; sourceTree = "<group>"; };
-		3721A87B1CB06E1D006FDD9A /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		3746F3F41CB121E2007DFC71 /* chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.obj; sourceTree = "<group>"; };
+		3746F3F51CB121E2007DFC71 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		3746F3F61CB121E2007DFC71 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 		37C443301CB0535B005C4105 /* Rotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C443331CB0535B005C4105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C4433A1CB0535B005C4105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -239,7 +223,7 @@
 		3721A84D1CB06310006FDD9A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3721A8701CB06E1D006FDD9A /* Obj */,
+				3746F3F31CB121E2007DFC71 /* OBJ */,
 				37C4433A1CB0535B005C4105 /* Assets.xcassets */,
 				37C4433C1CB0535B005C4105 /* LaunchScreen.storyboard */,
 			);
@@ -287,22 +271,14 @@
 			path = "Obj Loader";
 			sourceTree = "<group>";
 		};
-		3721A8701CB06E1D006FDD9A /* Obj */ = {
+		3746F3F31CB121E2007DFC71 /* OBJ */ = {
 			isa = PBXGroup;
 			children = (
-				3721A8711CB06E1D006FDD9A /* chair.obj */,
-				3721A8721CB06E1D006FDD9A /* cube.obj */,
-				3721A8731CB06E1D006FDD9A /* large_teapot.obj */,
-				3721A8741CB06E1D006FDD9A /* new_chair.obj */,
-				3721A8751CB06E1D006FDD9A /* new_chair_90.obj */,
-				3721A8761CB06E1D006FDD9A /* plane.obj */,
-				3721A8771CB06E1D006FDD9A /* small_chair.obj */,
-				3721A8781CB06E1D006FDD9A /* small_chair_close.obj */,
-				3721A8791CB06E1D006FDD9A /* small_chair_close2.obj */,
-				3721A87A1CB06E1D006FDD9A /* smallest_chair.obj */,
-				3721A87B1CB06E1D006FDD9A /* teapot.obj */,
+				3746F3F41CB121E2007DFC71 /* chair.obj */,
+				3746F3F51CB121E2007DFC71 /* plane.obj */,
+				3746F3F61CB121E2007DFC71 /* teapot.obj */,
 			);
-			path = Obj;
+			path = OBJ;
 			sourceTree = "<group>";
 		};
 		37C443271CB0535B005C4105 = {
@@ -476,19 +452,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3721A87D1CB06E1D006FDD9A /* cube.obj in Resources */,
-				3721A8821CB06E1D006FDD9A /* small_chair.obj in Resources */,
-				3721A87C1CB06E1D006FDD9A /* chair.obj in Resources */,
-				3721A8811CB06E1D006FDD9A /* plane.obj in Resources */,
-				3721A8801CB06E1D006FDD9A /* new_chair_90.obj in Resources */,
-				3721A8841CB06E1D006FDD9A /* small_chair_close2.obj in Resources */,
-				3721A87E1CB06E1D006FDD9A /* large_teapot.obj in Resources */,
-				3721A8861CB06E1D006FDD9A /* teapot.obj in Resources */,
-				3721A8831CB06E1D006FDD9A /* small_chair_close.obj in Resources */,
+				3746F3F71CB121E2007DFC71 /* chair.obj in Resources */,
 				37C4433E1CB0535B005C4105 /* LaunchScreen.storyboard in Resources */,
-				3721A87F1CB06E1D006FDD9A /* new_chair.obj in Resources */,
-				3721A8851CB06E1D006FDD9A /* smallest_chair.obj in Resources */,
+				3746F3F81CB121E2007DFC71 /* plane.obj in Resources */,
 				37C4433B1CB0535B005C4105 /* Assets.xcassets in Resources */,
+				3746F3F91CB121E2007DFC71 /* teapot.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
