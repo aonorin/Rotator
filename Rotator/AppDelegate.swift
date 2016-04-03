@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Initialize dependencies
-        let container = ContainerFactory().build()
         URLNavigationMap.initialize()
         
         // Launch

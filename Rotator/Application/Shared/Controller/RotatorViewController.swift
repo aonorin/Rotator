@@ -17,8 +17,8 @@ class RotatorViewController: UIViewController, URLNavigable {
         return metal
     }()
     
-    lazy var renderer: ObjViewRenderer = {
-        let r = ObjViewRenderer(metalView: self.metal)
+    lazy var renderer: BaseObjRenderer = {
+        let r = BaseObjRenderer(metalView: self.metal)
         return r
     }()
     
@@ -62,8 +62,9 @@ class RotatorViewController: UIViewController, URLNavigable {
         
         // Setup metal
         
-        renderer.loadModel(ChairObj())
-//        renderer.loadModel(TeapotObj())
+        renderer.baseObj = ChairObj()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Teapot time", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("switchToTeapot"))
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -91,5 +92,11 @@ class RotatorViewController: UIViewController, URLNavigable {
     func navigateToModelSelector() {
         
         
+    }
+    
+    
+    // MARK: Action
+    func switchToTeapot() {
+        renderer.baseObj = TeapotObj()
     }
 }

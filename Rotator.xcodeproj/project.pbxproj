@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C7D58707CA44F95931F7040 /* Pods_Rotator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0ECE922E4A0E0B4BD3AEA /* Pods_Rotator.framework */; };
+		370BF6CF1CB09B2100192C34 /* BaseObjRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6CE1CB09B2100192C34 /* BaseObjRenderer.swift */; };
+		370BF6D31CB09D0200192C34 /* ObjViewRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 370BF6D21CB09D0200192C34 /* ObjViewRenderer.mm */; };
 		3721A8421CB058D3006FDD9A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A8411CB058D3006FDD9A /* Metal.framework */; };
 		3721A8441CB058D9006FDD9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A8431CB058D9006FDD9A /* QuartzCore.framework */; };
 		3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8501CB06390006FDD9A /* ContainerFactory.swift */; };
@@ -18,7 +20,6 @@
 		3721A86B1CB06C7F006FDD9A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8621CB06C7F006FDD9A /* Renderer.m */; };
 		3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8631CB06C7F006FDD9A /* Shaders.metal */; };
 		3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8661CB06C7F006FDD9A /* Transforms.mm */; };
-		3721A86E1CB06C7F006FDD9A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3721A8681CB06C7F006FDD9A /* ViewController.mm */; };
 		3721A87C1CB06E1D006FDD9A /* chair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8711CB06E1D006FDD9A /* chair.obj */; };
 		3721A87D1CB06E1D006FDD9A /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8721CB06E1D006FDD9A /* cube.obj */; };
 		3721A87E1CB06E1D006FDD9A /* large_teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3721A8731CB06E1D006FDD9A /* large_teapot.obj */; };
@@ -35,12 +36,10 @@
 		37C4433E1CB0535B005C4105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C4433C1CB0535B005C4105 /* LaunchScreen.storyboard */; };
 		37C443491CB0535C005C4105 /* RotatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C443481CB0535C005C4105 /* RotatorTests.swift */; };
 		37C443541CB0535C005C4105 /* RotatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C443531CB0535C005C4105 /* RotatorUITests.swift */; };
-		37D516181CB07FD6005A9BC8 /* ObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D516171CB07FD6005A9BC8 /* ObjView.swift */; };
 		37D5161A1CB08033005A9BC8 /* ObjProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D516191CB08033005A9BC8 /* ObjProtocol.swift */; };
 		37D5161D1CB080A9005A9BC8 /* ChairObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5161C1CB080A9005A9BC8 /* ChairObj.swift */; };
 		37D5161F1CB08154005A9BC8 /* ViewSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5161E1CB08154005A9BC8 /* ViewSpace.swift */; };
 		37D516211CB0835E005A9BC8 /* TeapotObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D516201CB0835E005A9BC8 /* TeapotObj.swift */; };
-		37D516271CB084BB005A9BC8 /* ObjViewRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37D516261CB084BB005A9BC8 /* ObjViewRenderer.mm */; };
 		37D5162B1CB08F12005A9BC8 /* BaseObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5162A1CB08F12005A9BC8 /* BaseObj.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		297DFCE89369D999EE900284 /* Pods-Rotator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rotator/Pods-Rotator.debug.xcconfig"; sourceTree = "<group>"; };
+		370BF6CE1CB09B2100192C34 /* BaseObjRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObjRenderer.swift; sourceTree = "<group>"; };
+		370BF6D11CB09D0200192C34 /* ObjViewRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjViewRenderer.h; sourceTree = "<group>"; };
+		370BF6D21CB09D0200192C34 /* ObjViewRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjViewRenderer.mm; sourceTree = "<group>"; };
 		3721A8411CB058D3006FDD9A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		3721A8431CB058D9006FDD9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3721A8501CB06390006FDD9A /* ContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerFactory.swift; sourceTree = "<group>"; };
@@ -79,8 +81,6 @@
 		3721A8641CB06C7F006FDD9A /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		3721A8651CB06C7F006FDD9A /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
 		3721A8661CB06C7F006FDD9A /* Transforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transforms.mm; sourceTree = "<group>"; };
-		3721A8671CB06C7F006FDD9A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3721A8681CB06C7F006FDD9A /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		3721A8711CB06E1D006FDD9A /* chair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.obj; sourceTree = "<group>"; };
 		3721A8721CB06E1D006FDD9A /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
 		3721A8731CB06E1D006FDD9A /* large_teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = large_teapot.obj; sourceTree = "<group>"; };
@@ -103,13 +103,10 @@
 		37C4434F1CB0535C005C4105 /* RotatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C443531CB0535C005C4105 /* RotatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatorUITests.swift; sourceTree = "<group>"; };
 		37C443551CB0535C005C4105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37D516171CB07FD6005A9BC8 /* ObjView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjView.swift; sourceTree = "<group>"; };
 		37D516191CB08033005A9BC8 /* ObjProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjProtocol.swift; sourceTree = "<group>"; };
 		37D5161C1CB080A9005A9BC8 /* ChairObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChairObj.swift; sourceTree = "<group>"; };
 		37D5161E1CB08154005A9BC8 /* ViewSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSpace.swift; sourceTree = "<group>"; };
 		37D516201CB0835E005A9BC8 /* TeapotObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeapotObj.swift; sourceTree = "<group>"; };
-		37D516251CB084BB005A9BC8 /* ObjViewRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjViewRenderer.h; sourceTree = "<group>"; };
-		37D516261CB084BB005A9BC8 /* ObjViewRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjViewRenderer.mm; sourceTree = "<group>"; };
 		37D5162A1CB08F12005A9BC8 /* BaseObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObj.swift; sourceTree = "<group>"; };
 		60EF8734CAA782DCA08D0778 /* Pods-Rotator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rotator/Pods-Rotator.release.xcconfig"; sourceTree = "<group>"; };
 		EAF0ECE922E4A0E0B4BD3AEA /* Pods_Rotator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rotator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370BF6D01CB09D0200192C34 /* CPP renderer */ = {
+			isa = PBXGroup;
+			children = (
+				370BF6D11CB09D0200192C34 /* ObjViewRenderer.h */,
+				370BF6D21CB09D0200192C34 /* ObjViewRenderer.mm */,
+			);
+			path = "CPP renderer";
+			sourceTree = "<group>";
+		};
 		3721A8451CB05CC7006FDD9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,9 +215,8 @@
 		3721A84C1CB06310006FDD9A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				37D516171CB07FD6005A9BC8 /* ObjView.swift */,
-				37D516251CB084BB005A9BC8 /* ObjViewRenderer.h */,
-				37D516261CB084BB005A9BC8 /* ObjViewRenderer.mm */,
+				370BF6CE1CB09B2100192C34 /* BaseObjRenderer.swift */,
+				370BF6D01CB09D0200192C34 /* CPP renderer */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,8 +268,6 @@
 				3721A8641CB06C7F006FDD9A /* Shared.h */,
 				3721A8651CB06C7F006FDD9A /* Transforms.h */,
 				3721A8661CB06C7F006FDD9A /* Transforms.mm */,
-				3721A8671CB06C7F006FDD9A /* ViewController.h */,
-				3721A8681CB06C7F006FDD9A /* ViewController.mm */,
 			);
 			path = "Obj Loader";
 			sourceTree = "<group>";
@@ -555,16 +558,15 @@
 				3721A86C1CB06C7F006FDD9A /* Shaders.metal in Sources */,
 				3721A8561CB06646006FDD9A /* RotatorViewController.swift in Sources */,
 				37D516211CB0835E005A9BC8 /* TeapotObj.swift in Sources */,
-				3721A86E1CB06C7F006FDD9A /* ViewController.mm in Sources */,
+				370BF6CF1CB09B2100192C34 /* BaseObjRenderer.swift in Sources */,
 				37D5161F1CB08154005A9BC8 /* ViewSpace.swift in Sources */,
+				370BF6D31CB09D0200192C34 /* ObjViewRenderer.mm in Sources */,
 				3721A86A1CB06C7F006FDD9A /* OBJModel.mm in Sources */,
 				3721A86D1CB06C7F006FDD9A /* Transforms.mm in Sources */,
 				37D5162B1CB08F12005A9BC8 /* BaseObj.swift in Sources */,
 				37D5161A1CB08033005A9BC8 /* ObjProtocol.swift in Sources */,
 				3721A86B1CB06C7F006FDD9A /* Renderer.m in Sources */,
-				37D516271CB084BB005A9BC8 /* ObjViewRenderer.mm in Sources */,
 				3721A8511CB06390006FDD9A /* ContainerFactory.swift in Sources */,
-				37D516181CB07FD6005A9BC8 /* ObjView.swift in Sources */,
 				37D5161D1CB080A9005A9BC8 /* ChairObj.swift in Sources */,
 				37C443341CB0535B005C4105 /* AppDelegate.swift in Sources */,
 				3721A8541CB065CF006FDD9A /* URLNavigationMap.swift in Sources */,
