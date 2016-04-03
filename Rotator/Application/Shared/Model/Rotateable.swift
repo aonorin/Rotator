@@ -1,5 +1,5 @@
 //
-//  ObjProtocol.swift
+//  Rotateable.swift
 //  Rotator
 //
 //  Created by Dan on 3/4/16.
@@ -8,9 +8,6 @@
 
 import Foundation
 
-@objc protocol ObjProtocol {
-    
-    var fileURL: NSURL { get set }
+protocol Rotateable {
     var viewSpace: ViewSpace { get set }
-    
 }

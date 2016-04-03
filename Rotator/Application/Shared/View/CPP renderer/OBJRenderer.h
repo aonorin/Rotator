@@ -1,5 +1,5 @@
 //
-//  ObjViewRenderer.h
+//  OBJRenderer.h
 //  Rotator
 //
 //  Created by Dan on 3/4/16.

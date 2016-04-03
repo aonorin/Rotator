@@ -22,7 +22,7 @@ static float DegToRad(float deg)
 
 @interface OBJRenderer ()
 
-@property (nonatomic, strong) BaseObj *obj;
+@property (nonatomic, strong) ThreeDModel *obj;
 
 @property (nonatomic, strong) Renderer *renderer;
 @property (nonatomic, strong) CADisplayLink *displayLink;
@@ -59,11 +59,11 @@ static float DegToRad(float deg)
 
 - (void)loadModel:(id)obj {
 
-    BaseObj *baseObj = (BaseObj *)obj;
+    ThreeDModel *threeDModel = (ThreeDModel *)obj;
 
-    self.obj = baseObj;
+    self.obj = threeDModel;
     
-    NSURL *modelURL = baseObj.fileURL;
+    NSURL *modelURL = threeDModel.fileURL;
     
     OBJModel *model = [[OBJModel alloc] initWithContentsOfURL:modelURL];
     

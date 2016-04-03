@@ -1,5 +1,5 @@
 //
-//  ChairObj.swift
+//  Teapot.swift
 //  Rotator
 //
 //  Created by Dan on 3/4/16.
@@ -9,16 +9,15 @@
 import Foundation
 import UIKit
 
-@objc class ChairObj: BaseObj {
+@objc class Teapot: ThreeDModel {
     
     override init() {
         super.init()
         
-        if let url = NSBundle.mainBundle().URLForResource("small_chair_close2", withExtension: "obj") {
+        if let url = NSBundle.mainBundle().URLForResource("teapot", withExtension: "obj") {
             self.fileURL = url
         }
-        self.viewSpace = ViewSpace(cameraDistance: -100, cameraNear: 0.1, cameraFar: 200)
-    
+        self.viewSpace = ViewSpace(cameraDistance: -1, cameraNear: 0.1, cameraFar: 100)
     }
     
 }

@@ -11,7 +11,7 @@ import URLNavigator
 
 class RotatorViewController: UIViewController, URLNavigable {
 
-    let velocityScale: Float = 0.01
+    static let velocityScale: Float = 0.01
     
     lazy var metal: MetalView = {
         let metal = MetalView()
@@ -55,7 +55,6 @@ class RotatorViewController: UIViewController, URLNavigable {
         // Dispose of any resources that can be recreated.
     }
     
-    
     private func setup() {
         
         // Prevent view from going underneath nav bar
@@ -63,7 +62,7 @@ class RotatorViewController: UIViewController, URLNavigable {
         self.navigationController?.view.backgroundColor = .whiteColor()
         
         // Renderer will display the rotateable object using metal
-        renderer.baseObj = ChairObj()
+        renderer.model = Chair()
         
         // Setup swipe rotating event handler
         let gr = UIPanGestureRecognizer(target: self, action: Selector("didPanMetalView:"))
@@ -97,7 +96,7 @@ class RotatorViewController: UIViewController, URLNavigable {
 
         // Affects the angle of the rotateable object
         let velocity = gestureRecognizer.velocityInView(metal)
-        renderer.angularVelocity = CGPoint(x: velocity.x * CGFloat(velocityScale), y: velocity.y * CGFloat(velocityScale))
+        renderer.angularVelocity = CGPoint(x: velocity.x * CGFloat(RotatorViewController.velocityScale), y: velocity.y * CGFloat(RotatorViewController.velocityScale))
     }
     
     // MARK: Navigation
@@ -108,6 +107,6 @@ class RotatorViewController: UIViewController, URLNavigable {
     
     // MARK: Action
     func switchToTeapot() {
-        renderer.baseObj = TeapotObj()
+        renderer.model = Teapot()
     }
 }

@@ -1,8 +1,8 @@
 //
-//  BaseObjRenderer.swift
+//  ThreeDModelRenderer.swift
 //  Rotator
 //  
-//  A facade wrapper for the C++ OBJRenderer, ensures BaseObj type is strict
+//  A facade wrapper for the C++ OBJRenderer, ensures ThreeDModel type is strict
 //  Composition of OBJRenderer
 //
 //  Created by Dan on 3/4/16.
@@ -13,12 +13,12 @@ import UIKit
 
 class Renderer {
 
-    var baseObj: BaseObj? {
+    var model: ThreeDModel? {
         didSet {
-            if let baseObj = baseObj {
+            if let model = model {
                 
                 // Setter ensures type is checked
-                self.objRenderer.loadModel(baseObj)
+                self.objRenderer.loadModel(model)
             }
         }
     }
